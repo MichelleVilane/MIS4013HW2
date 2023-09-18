@@ -6,9 +6,13 @@ include "view-header.php";
 <?php
 if (isset($_POST['my-name'])) {
 ?>
+ <p> The value sent is:</p>
+<?php
+ echo $_POST['my-name'];
+} else {
+ ?>
   <p>Nothing posted to the page.</p>
 <?php
-} else {
 }
 include "view-footer.php";
 ?>
